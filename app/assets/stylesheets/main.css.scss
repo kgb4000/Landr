@@ -8,6 +8,7 @@ html, body {
 
 body {
 	font-family: 'Open Sans', sans-serif;
+	font-size: 1em;
 }
 
 .center {
@@ -76,18 +77,52 @@ body {
 	padding-bottom: .4em;
 }
 
-.photos {
-	padding: 2em 0;
-	margin: 2em 0;
+header.show-header {
+	height: auto;
+	background-color: #fff;
+	text-align: center;
+	padding: 10px 0;
 }
 
-.fanatic {
-	max-width: 60px;
-	max-height: 60px;
+section.show-section {
+  height: 80%;
+  background: image-url('dude-on-mic.jpg') no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
 }
 
-.kgb-img {
+h1.show-title {
 	display: inline;
+	font-weight: 800;
+}
+
+.hero-text {
+	padding-top: 250px;
+}
+
+h2.show-head-text,
+.show-text {
+	color: #fff;
+}
+
+.referral-title {
+	text-align: center;
+	padding: 30px 0;
+	font-weight: 700;
+}
+
+.form-control[disabled], 
+.form-control[readonly], 
+fieldset[disabled] .form-control {
+	background-color: #fff;
+}
+
+.shirt {
+	max-width: 300px;
+	padding: 20px 0;
+	margin: 0 auto;
 }
 
 footer {

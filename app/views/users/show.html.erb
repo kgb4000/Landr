@@ -1,9 +1,62 @@
-<p id="notice"><%= notice %></p>
+<header class="show-header">
+	<div class="container">
+		<div class="row">
+			<h1 class="show-title">Open Mic Love  </h1> 
+			<p>Thank you for signing up with us <%= @user.email %></p>
+		</div>
+	</div>
+</header>
 
-<p>
-  <strong>Email:</strong>
-  <%= @user.email %>
-</p>
+<section class="show-section">
+	<div class="container">
+		<div class="hero-text">
+			<div class="row">
+				<div class="col-md-5 col-md-offset-7">
+					<h2 class="show-head-text">Invite bands, artists, and event promoters you know and earn free promotional products for your music</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-5 col-md-offset-7">
+					<p class="show-text">Share your unique link via email, facebook, twitter, or google plus, and earn free products form Open Mic Love for each friend or band that signs up</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-5 col-md-offset-7">
+					<div class="form-control"><%= root_url %>?ref=<%= @user.referral_code %></div>
+					<span class="show-text help-block">Copy the link above and share it to earn </span>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
 
-<%= link_to 'Edit', edit_user_path(@user) %> |
-<%= link_to 'Back', users_path %>
+<section class="earning-section">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h2 class="referral-title">What you get:</h2>
+			</div>
+			<section class="referral-prizes">
+					<div class="col-md-4 center">
+						<h2>10 referrals</h2>
+						<%= image_tag ('shirt.jpg'), class: 'shirt img-responsive' %>
+					</div>
+					<div class="col-md-4 center">
+						<h2>40 referrals</h2>
+						<%= image_tag ('shirt.jpg'), class: 'shirt img-responsive' %>
+					</div>
+					<div class="col-md-4 center">
+						<h2>100 referrals</h2>
+						<%= image_tag ('shirt.jpg'), class: 'shirt img-responsive' %>
+					</div>
+			</section>
+		</div>
+	</div>
+</section>
+
+<section>
+
+</section>
+ 
+
+
